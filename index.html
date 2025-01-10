@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Caveat+Brush&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Outfit", sans-serif;
+      font-size: 18px;
+      color: hsl(178, 100%, 50%);
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    #container {
+      padding: 25px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+      width: 300px;
+      display: grid;
+      grid-row-gap: 20px;
+    }
+
+    #bg-pic {
+      background-image: url("images/image-equilibrium.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    #bg-pic2 {
+      opacity: 0;
+    }
+
+    #bg-pic:hover {
+      opacity: 70%;
+
+    }
+
+    #value {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text {
+      color: hsl(215, 51%, 70%);
+      font-weight: 400;
+    }
+
+    hr {
+      border-color: hsl(215, 32%, 27%);
+    }
+
+    #prof-pic {
+      width: 40px;
+      border: 2px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+    }
+
+    span {
+      color: hsl(178, 100%, 50%);
+    }
+
+    span:hover {
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .icons {
+      display: flex;
+      column-gap: 8px;
+    }
+
+    #author {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <picture id="bg-pic">
+      <img src="./images/icon-view.svg" alt="bg" id="bg-pic2">
+    </picture>
+    
+    <div class="title">Equilibrium <span>#3429</span></div>
+    <div class="text">Our Equilibrium collection promotes balance and calm.</div>
+
+    <div id="value">
+      <div class="icons"><img src="./images/icon-ethereum.svg" alt="icon"> 0.041 ETH</div>
+      <div class="text icons"><img src="./images/icon-clock.svg" alt="icon-clock"> 3 days left</div>
+    </div>
+
+    <hr>
+
+    <div class="text" id="author">
+      <img src="./images/image-avatar.png" alt="pic" id="prof-pic">
+      <div>Creation of <span>Jules Wyvern</span></div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jaya Vignesh A</a>.
+  </div>
+</body>
+
+</html>
