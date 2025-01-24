@@ -52,13 +52,26 @@
       cursor: pointer;
     }
 
-    #bg-pic2 {
+    #bg {
+      background-color: white;
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      position: absolute;
       opacity: 0;
     }
 
-    #bg-pic:hover {
-      opacity: 70%;
+    #bg-pic2 {
+      opacity: 0%;
+    }
 
+    #bg-pic:hover #bg {
+      opacity: 40%;
+    }
+
+    #bg-pic:hover #bg-pic2{
+      opacity: 100%;
+      /* background-color:  hsl(178, 100%, 50%); */
     }
 
     #value {
@@ -119,6 +132,7 @@
 <body>
   <div id="container">
     <picture id="bg-pic">
+      <div id="bg"></div>
       <img src="./images/icon-view.svg" alt="bg" id="bg-pic2">
     </picture>
     
